@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+nav {
+	background: #2ec194;
+	width: 100%;
+	height: 100px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	box-shadow: 0 6px 10px #00000026;
+}
+nav .logo {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	display: flex;
+}
+nav .logo img {
+	margin: auto;
+}
+nav .nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 250px;
+}
+nav .nav-links li a {
+	color: #fff;
+	font-family: 'Chilanka';
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	z-index: 1000;
+}
+nav .nav-links li a:hover {
+	cursor: pointer;
+	background: #5ce0b9;
+	transition: .16s;
+}
+.banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Chilanka';
+}
+.slide-1 {
+	background: url(./images/leo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.slide-2 {
+	background: url(./images/leo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.slide-3 {
+	background: url(./images/leo3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.slide-4 {
+	background: url(./images/leo4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.slide-5 {
+	background: url(./images/leo5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.slide-6 {
+	background: url(./images/leo6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.swiper-slide h4.head1 {
+	font-size: 2em;
+}
+.swiper-slide h1.title {
+	font-size: 5em;
+	font-family: 'Raleway';
+}
+.slide-1 > div {
+	position: absolute;
+	bottom: 100px;
+}
+.slide-2 > div {
+	position: absolute;
+	top: 100px;
+}
+.slide-3 > div {
+	position: absolute;
+	top: 50%;
+}
+.slide-4 > div {
+	position: absolute;
+	bottom: 50px;
+}
+.slide-5 > div {
+	position: absolute;
+	bottom: 170px;
+}
+.slide-6 > div {
+	position: absolute;
+	top: 200px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	background: #2ec194;
+	border-radius: 50%;
+	padding: 50px;
+	transform: scale(.7);
+	box-shadow: 3px 3px 5px #00000045,
+				-3px -3px 6px #00000025;
+	cursor: pointer;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	background: #25b086;
+}
+@media (max-width: 658px) {
+	.swiper-slide h1 {
+		font-size: 4em !important;
+	}
+	.swiper-slide h4 {
+		font-size: 2em !important;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		transform: scale(.5);
+	}
+	.swiper-button-prev {
+		margin-left: -30px;
+	}
+	.swiper-button-next {
+		margin-right: -30px;
+	}
+	.slide-3 > div {
+		position: absolute;
+		top: 50px;
+	}
+}
+@media (max-height: 730px) {
+	.slide-5 {
+		background-position: top;
+	}
+}
+@media (max-height: 420px) {
+	.swiper-slide > div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) !important;
+	}
+	nav {
+		height: 50px;
+	}
+	nav .logo {
+		width: 48px;
+		height: 48px;
+	}
+	.banner {
+		height: calc(100vh - 50px);
+	}
+}

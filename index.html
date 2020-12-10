@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LeoPortfolio — My Portfolio Site</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, scalable=yes" />
+	<meta name="title" content="LeoPortfolio my name is Leo and I'm a cat, I am cute so yeah... :3">
+	<meta name="keywords" content="LeoPortfolio, cute, pookit, cats, :3">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="shortcut icon" type="img/png" href="./images/shortcut_icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Raleway:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img src="./images/leo_logo.png" alt="LeoPortfolio" />
+		</div>
+		<ul class='nav-links'>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section class="banner">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide slide-1">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">FANCY</h1>
+				        </div>
+			        </div>
+			        <div class="swiper-slide slide-2">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">LAZY</h1>
+				        </div>
+			        </div>
+			        <div class="swiper-slide slide-3">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">BEAUTIFUL</h1>
+				        </div>
+			        </div>
+			        <div class="swiper-slide slide-4">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">FRISKY</h1>
+				        </div>
+			        </div>
+			        <div class="swiper-slide slide-5">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">CHILL</h1>
+				        </div>
+			        </div>
+			        <div class="swiper-slide slide-6">
+			        	<div data-swiper-parallax="-200">
+				        	<h4 class="head1" data-swiper-parallax="400">Leo is...</h4>
+				        	<h1 class="title">TASTY</h1>
+				        </div>
+			        </div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript">
+		let mySwiper = new Swiper('.swiper-container', {
+		  // Optional parameters
+		  loop: true,
+		  parallax: true,
+		  speed: 1000,
+		  // If we need pagination
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
+		  mousewheel: true,
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		  effect: 'coverflow',
+		      grabCursor: true,
+		      centeredSlides: true,
+		      slidesPerView: 'auto',
+		      coverflowEffect: {
+		        rotate: 50,
+		        stretch: 0,
+		        depth: 100,
+		        modifier: 1,
+		        slideShadows: true,
+		    },
+		});
+	</script>
+</body>
+</html>
