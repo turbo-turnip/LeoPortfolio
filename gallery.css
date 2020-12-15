@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: .4s;
+}
+nav {
+	background: #2ec194;
+	width: 100%;
+	height: 100px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+	box-shadow: 0 6px 10px #00000026;
+}
+nav .logo {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	display: flex;
+}
+nav .logo img {
+	margin: auto;
+	width: 80px;
+	height: 79.5px;
+}
+nav .nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 250px;
+}
+nav .nav-links li a {
+	color: #fff;
+	font-family: 'Chilanka';
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	z-index: 1000;
+}
+nav .nav-links li a:hover {
+	cursor: pointer;
+	background: #5ce0b9;
+	transition: .16s;
+}
+
+
+
+
+
+.container {
+	width: 100%;
+	padding: 100px 80px;
+	display: grid;
+	place-items: center;
+	grid-gap: 15px !important;
+	grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+}
+.container .project img {
+	margin: auto;
+	width: 250px;
+	height: 100%;
+}
+.container .project {
+	display: flex;
+	width: 250px;
+	height: max-content;
+	overflow: hidden;
+	border-radius: 12px;
+}
+.container .project:hover img {
+	transform: scale(1.2);
+}
