@@ -3,6 +3,7 @@ const posts = document.querySelectorAll(".post");
 const postTimeSpans = document.querySelectorAll(".post .date");
 let postTimes = [
     new Date(2021, 2, 11),
+    new Date(2021, 2, 11),
     new Date(2021, 2, 11)
 ];
 
