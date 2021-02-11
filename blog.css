@@ -4,9 +4,6 @@
 	box-sizing: border-box;
     transition: .4s;
 }
-body {
-    height: 500vh;
-}
 nav {
 	background: #2ec194;
 	width: 100%;
@@ -58,6 +55,7 @@ nav .nav-links li a:hover {
     position: sticky;
     top: 0px;
     box-shadow: 0 3px 12px #00000030;
+    z-index: 1000;
 }
 .top-search .filter {
     font-size: 1em;
