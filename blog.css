@@ -80,6 +80,7 @@ nav .nav-links li a:hover {
 .posts .post {
     width: 100%;
     max-width: 600px;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
