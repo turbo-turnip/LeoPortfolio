@@ -115,6 +115,10 @@ nav .nav-links li a:hover {
     border-radius: .5em;
     margin-top: 1em;
 }
+.post .post-img img {
+	width: 100%;
+	max-width: 800px;
+}
 .post-img:hover > img {
     transform: scale(1.2);
 }
